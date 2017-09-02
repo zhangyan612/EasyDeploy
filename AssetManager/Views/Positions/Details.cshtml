@@ -1,0 +1,107 @@
+﻿@model WebAssetManager.Models.Position
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Position</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Account.AccountName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Account.AccountName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Strategy.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Strategy.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.StockName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.StockName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Symbol)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Symbol)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Description)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Description)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.HoldingAmount)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HoldingAmount)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SellableAmount)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SellableAmount)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CostPrice)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CostPrice)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CurrentPrice)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CurrentPrice)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Weight)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Weight)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FundNumber)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FundNumber)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.PositionId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
